@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #eef3f8;
+    color: #26364a;
+    font-family: Arial, sans-serif;
+}
+
+.contenedor {
+    max-width: 1040px;
+    margin: 35px auto;
+    padding: 0 16px;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+    color: #183b62;
+}
+
+.subtitulo {
+    text-align: center;
+    color: #617287;
+    margin: 10px 0 26px;
+}
+
+.tarjeta {
+    background: white;
+    padding: 24px;
+    border-radius: 12px;
+    margin-bottom: 22px;
+    box-shadow: 0 2px 10px #d7e0e8;
+}
+
+h2 {
+    margin: 0 0 18px;
+    font-size: 20px;
+    color: #183b62;
+}
+
+.campos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    margin-top: 7px;
+    font: inherit;
+}
+
+input:focus {
+    outline: 2px solid #77ade0;
+}
+
+.acciones {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+button,
+.boton {
+    background: #2563a7;
+    color: white;
+    padding: 11px 16px;
+    border: 0;
+    border-radius: 6px;
+    font: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button:hover,
+.boton:hover {
+    background: #194d85;
+}
+
+.secundario {
+    background: #e5ecf3;
+    color: #26364a;
+}
+
+.secundario:hover {
+    background: #d3deeb;
+}
+
+.peligro {
+    background: #aa3333;
+}
+
+.peligro:hover {
+    background: #842626;
+}
+
+.tabla-scroll {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th,
+td {
+    padding: 12px 10px;
+    border-bottom: 1px solid #e0e7ee;
+    font-size: 14px;
+}
+
+th {
+    color: #183b62;
+    background: #f1f5fa;
+}
+
+.enlaces {
+    white-space: nowrap;
+}
+
+.enlaces a {
+    color: #2563a7;
+    margin-right: 10px;
+}
+
+.enlaces .eliminar {
+    color: #aa3333;
+}
+
+.aviso {
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 18px;
+}
+
+.correcto {
+    background: #e8f5ed;
+    color: #226541;
+}
+
+.error {
+    background: #fdeaea;
+    color: #9a2e2e;
+}
+
+.vacio {
+    text-align: center;
+    color: #617287;
+}
+
+@media (max-width: 600px) {
+    .campos {
+        grid-template-columns: 1fr;
+    }
+
+    .tarjeta {
+        padding: 16px;
+    }
+
+    .contenedor {
+        margin-top: 24px;
+    }
+}
